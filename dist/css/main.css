@@ -1,0 +1,191 @@
+@charset "UTF-8";
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+header .cabecalho {
+  display: flex;
+  justify-content: end;
+}
+header .cabecalho__botao {
+  border: none;
+  background-color: #131316;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+@keyframes subirFoguete {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(50px) translateY(-30px);
+  }
+}
+.hero {
+  padding-top: 250px;
+  height: 550px;
+}
+.hero__background {
+  position: absolute;
+  top: 0;
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(0.5);
+  transition: opacity 1.5s ease-in-out;
+  opacity: 1;
+}
+.hero .fade-out {
+  opacity: 0;
+}
+.hero .container-principal-texto-hero {
+  backdrop-filter: blur(1px);
+  filter: brigthnessines(0.5);
+}
+.hero .container-principal-texto-hero__texto-principal {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #ffffff;
+}
+.hero .container-principal-texto-hero__texto-sobre-interestelar {
+  color: #ffffff;
+}
+.hero .container-principal-texto-hero__foguete-icon {
+  animation: subirFoguete 2s ease-in infinite;
+  display: inline-block;
+}
+.hero .container-principal-texto-hero__estrelas {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+.hero .container-principal-texto-hero__estrela {
+  color: gold;
+}
+.hero .container-principal-texto-hero__botao-imdb {
+  background-color: gold;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+}
+.hero .container-principal-texto-hero__botao-imdb:hover {
+  background-color: rgba(255, 217, 0, 0.705);
+}
+.hero .container-principal-texto-hero__personagens-principais h6 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.hero .container-principal-texto-hero__personagens-principais ul {
+  justify-content: center;
+}
+.hero .container-principal-texto-hero__personagens-principais li {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.hero .container-principal-texto-hero__personagens-principais li:before {
+  content: "•";
+  padding-right: 2px;
+}
+.hero .nome-filme {
+  position: absolute;
+  top: 0;
+  padding: 5px;
+}
+.hero .nome-filme__texto {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.5607843137);
+}
+
+.tesseract {
+  background-image: url("../../src/imagens/cooper-no-tesseract.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  height: 550px;
+}
+.tesseract .texto-resumo {
+  background-color: black;
+  text-align: center;
+  color: #FBF7ED;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.tesseract .resumo-filme {
+  width: 100%;
+  height: 450px;
+  gap: 10px;
+}
+.tesseract .resumo-filme__texto-sobre {
+  text-wrap: wrap;
+  backdrop-filter: brightness(0.5);
+  padding: 10px;
+  width: 70%;
+}
+.tesseract .resumo-filme__texto-sobre h2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: white;
+  margin-bottom: 10px;
+}
+.tesseract .resumo-filme__texto-sobre p {
+  font-size: 0.8rem;
+  color: #fff;
+  line-height: 14px;
+  margin: 0;
+}
+.tesseract .resumo-filme__imagens-filme {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.tesseract .resumo-filme__imagens-filme img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.tesseract .resumo-filme .carousel-inner .carousel-item {
+  padding: 10px;
+}
+.tesseract .resumo-filme .carousel-inner__nome-personagem {
+  text-align: center;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin-top: 10px;
+}
+.tesseract .resumo-filme .carousel-inner__descricao-personagem {
+  color: #fff;
+  text-align: center;
+  text-align: left;
+  padding: 0 20px;
+  font-size: 0.7rem;
+  word-wrap: break-word;
+  line-height: 10px;
+}
+
+body {
+  background-color: black;
+}

@@ -1,0 +1,19 @@
+@use "./cores.scss";
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .cabecalho{
+        display: flex;
+        justify-content: end;
+        &__botao{
+            border: none;
+            background-color:#131316;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            
+        }
+    }
+}

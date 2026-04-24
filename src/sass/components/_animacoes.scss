@@ -1,0 +1,8 @@
+@keyframes subirFoguete {
+    from {
+        transform: translateX(0) translateY(0); 
+    }
+    to {
+        transform: translateX(50px) translateY(-30px); 
+    }
+}
