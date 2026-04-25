@@ -15,6 +15,10 @@ header .cabecalho__botao {
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+header .cabecalho__botao:hover {
+  background-color: rgba(0, 0, 0, 0.5333333333);
 }
 
 @keyframes subirFoguete {
@@ -123,7 +127,6 @@ header .cabecalho__botao {
 }
 .tesseract .resumo-filme {
   width: 100%;
-  height: 450px;
   gap: 10px;
 }
 .tesseract .resumo-filme__texto-sobre {
@@ -152,11 +155,14 @@ header .cabecalho__botao {
 }
 .tesseract .resumo-filme__imagens-filme img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 .tesseract .resumo-filme .carousel-inner .carousel-item {
   padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 500px;
 }
 .tesseract .resumo-filme .carousel-inner__nome-personagem {
   text-align: center;
