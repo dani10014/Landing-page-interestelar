@@ -26,8 +26,8 @@ header .cabecalho__botao {
   }
 }
 .hero {
-  padding-top: 250px;
-  height: 70vh;
+  padding-top: 350px;
+  height: 80vh;
 }
 .hero__background {
   position: absolute;
