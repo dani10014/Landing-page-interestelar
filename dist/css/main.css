@@ -27,7 +27,7 @@ header .cabecalho__botao {
 }
 .hero {
   padding-top: 250px;
-  height: 100vh;
+  height: 70vh;
 }
 .hero__background {
   position: absolute;
@@ -119,7 +119,7 @@ header .cabecalho__botao {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
-  height: 100vh;
+  height: 70vh;
 }
 .tesseract .resumo-filme {
   width: 100%;
