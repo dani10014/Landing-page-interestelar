@@ -55,7 +55,7 @@ header .cabecalho__botao:hover {
 .hero .container-principal-texto-hero__texto-principal {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: normal;
   font-style: normal;
   color: #ffffff;
 }
@@ -91,7 +91,7 @@ header .cabecalho__botao:hover {
 .hero .container-principal-texto-hero__personagens-principais h6 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: normal;
   font-style: normal;
   color: #fff;
   border-bottom: 2px solid #fff;
@@ -138,7 +138,7 @@ header .cabecalho__botao:hover {
 .tesseract .resumo-filme__texto-sobre h2 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: normal;
   font-style: normal;
   color: white;
   margin-bottom: 10px;
@@ -169,7 +169,7 @@ header .cabecalho__botao:hover {
   color: #fff;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: normal;
   font-style: normal;
   margin-top: 10px;
 }
@@ -179,14 +179,21 @@ header .cabecalho__botao:hover {
   padding: 0 20px;
   font-size: 0.7rem;
   word-wrap: break-word;
+  text-align: left;
   line-height: 10px;
 }
 
 @media (min-width: 794px) {
+  .hero {
+    height: 100vh;
+  }
   .hero .container-principal-texto-hero__personagens-principais li {
     width: 100%;
     text-align: center;
     font-size: 1rem;
+  }
+  .tesseract {
+    height: 100vh;
   }
   .resumo-filme__texto-sobre p {
     font-size: 1rem !important;
@@ -207,7 +214,7 @@ header .cabecalho__botao:hover {
   }
   .carousel-inner__descricao-personagem {
     font-size: 1rem !important;
-    line-height: 35px !important;
+    line-height: 30px !important;
   }
 }
 body {

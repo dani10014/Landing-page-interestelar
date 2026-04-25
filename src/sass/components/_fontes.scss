@@ -1,6 +1,6 @@
 @mixin fontePrincipal{
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal; // Changed from 'weight' to 'normal' for valid CSS
     font-style: normal;
 }
