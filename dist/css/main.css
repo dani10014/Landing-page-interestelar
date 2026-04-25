@@ -27,12 +27,12 @@ header .cabecalho__botao {
 }
 .hero {
   padding-top: 250px;
-  height: 550px;
+  height: 100vh;
 }
 .hero__background {
   position: absolute;
   top: 0;
-  height: 550px;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -119,16 +119,7 @@ header .cabecalho__botao {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
-  height: 550px;
-}
-.tesseract .texto-resumo {
-  background-color: black;
-  text-align: center;
-  color: #FBF7ED;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+  height: 100vh;
 }
 .tesseract .resumo-filme {
   width: 100%;
@@ -179,13 +170,40 @@ header .cabecalho__botao {
 .tesseract .resumo-filme .carousel-inner__descricao-personagem {
   color: #fff;
   text-align: center;
-  text-align: left;
   padding: 0 20px;
   font-size: 0.7rem;
   word-wrap: break-word;
   line-height: 10px;
 }
 
+@media (min-width: 794px) {
+  .hero .container-principal-texto-hero__personagens-principais li {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .resumo-filme__texto-sobre p {
+    font-size: 1rem !important;
+    line-height: 30px !important;
+  }
+  .resumo-filme__imagens-filme {
+    width: 100%;
+  }
+  .carousel-inner .carousel-item {
+    backdrop-filter: brightness(0.5) !important;
+  }
+  .carousel-inner .carousel-item img {
+    object-fit: cover !important;
+    background-position: center !important;
+  }
+  .carousel-inner .carousel-item.active {
+    backdrop-filter: brightness(0.5) !important;
+  }
+  .carousel-inner__descricao-personagem {
+    font-size: 1rem !important;
+    line-height: 35px !important;
+  }
+}
 body {
   background-color: black;
 }

@@ -7,14 +7,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
-    height: 550px;
+    height: 100vh;
 
-    .texto-resumo{
-            background-color: black;
-            text-align: center;
-            color:cores.$corPrincipalBotao;
-            @include fontes.fontePrincipal;
-    }
     .resumo-filme{
         width: 100%;
         height: 450px;
@@ -57,8 +51,7 @@
             }
             &__descricao-personagem{
                 color: #fff;
-                text-align: center;
-                text-align: left;       // Isso remove os espaços estranhos      // Dá o "respiro" entre as linhas
+                text-align: center;       // Isso remove os espaços estranhos      // Dá o "respiro" entre as linhas
                 padding: 0 20px;  
                 font-size: 0.7rem;      // Evita que o texto encoste na borda da tela
                 word-wrap: break-word;

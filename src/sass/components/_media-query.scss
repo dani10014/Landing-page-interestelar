@@ -1,0 +1,40 @@
+@media (min-width: 794px){
+    .hero{
+        .container-principal-texto-hero{
+            &__personagens-principais{
+                li{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .resumo-filme{
+        &__texto-sobre{
+            p{
+                font-size: 1rem !important;
+                line-height: 30px !important;
+            }
+        }
+        &__imagens-filme{
+            width:100%;
+        }
+    }
+    .carousel-inner{
+        .carousel-item{
+            backdrop-filter: brightness(0.5) !important;
+            img{
+                object-fit: cover !important;
+                background-position: center !important;
+            }
+        }
+        .carousel-item.active{
+            backdrop-filter: brightness(0.5) !important;
+        }
+        &__descricao-personagem{
+            font-size: 1rem !important;
+            line-height: 35px !important;
+            }
+        }
+    }

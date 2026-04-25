@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         bg.style.opacity = 0;
 
         setTimeout(() => {
-            i = (i + 1) % fotos.length; // Lógica de contador inteligente
+            i = (i + 1) % fotos.length; 
             bg.style.backgroundImage = `url(${fotos[i]})`;
             
             bg.style.opacity = 1;
