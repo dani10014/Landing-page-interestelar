@@ -31,7 +31,7 @@ header .cabecalho__botao:hover {
 }
 .hero {
   padding-top: 350px;
-  height: 80vh;
+  min-height: 90vh;
 }
 .hero__background {
   position: absolute;
@@ -123,7 +123,7 @@ header .cabecalho__botao:hover {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
-  min-height: 120vh;
+  min-height: 80vh;
 }
 .tesseract .resumo-filme {
   width: 100%;
@@ -219,7 +219,7 @@ header .cabecalho__botao:hover {
 }
 .onde-posso-assistir {
   background-color: rgb(15, 14, 14);
-  min-height: 120vh;
+  min-height: 80vh;
 }
 .onde-posso-assistir__texto-titulo {
   padding-top: 10px;
