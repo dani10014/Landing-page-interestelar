@@ -217,6 +217,110 @@ header .cabecalho__botao:hover {
     line-height: 30px !important;
   }
 }
+.onde-posso-assistir {
+  background-color: rgb(15, 14, 14);
+  height: 130vh;
+}
+.onde-posso-assistir__texto-titulo {
+  padding-top: 10px;
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+}
+.onde-posso-assistir .prime-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 25px;
+}
+.onde-posso-assistir .prime-video__prime-video-titulo {
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.onde-posso-assistir .prime-video__logo {
+  width: 100%;
+  height: 100px;
+  object-fit: scale-down;
+  margin-bottom: 20px;
+}
+.onde-posso-assistir .prime-video__plano-mensal {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.onde-posso-assistir .prime-video__plano-mensal-valor {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-left: 5px;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.onde-posso-assistir .prime-video__botao-verificar {
+  background-color: #ffffff;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 10px;
+  width: 50%;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+.onde-posso-assistir .prime-video__botao-verificar:hover {
+  background-color: rgba(0, 0, 0, 0.5333333333);
+}
+.onde-posso-assistir .hbo-max {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 25px;
+}
+.onde-posso-assistir .hbo-max__logo {
+  width: 100%;
+  height: 100px;
+  object-fit: scale-down;
+  margin-bottom: 20px;
+}
+.onde-posso-assistir .hbo-max__titulo {
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.onde-posso-assistir .claro-tv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 25px;
+}
+.onde-posso-assistir .claro-tv__logo {
+  width: 100%;
+  height: 100px;
+  object-fit: scale-down;
+  margin-bottom: 20px;
+}
+.onde-posso-assistir .claro-tv__titulo {
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
 body {
   background-color: black;
 }
