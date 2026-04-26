@@ -123,7 +123,7 @@ header .cabecalho__botao:hover {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
-  height: 70vh;
+  min-height: 120vh;
 }
 .tesseract .resumo-filme {
   width: 100%;
@@ -219,7 +219,7 @@ header .cabecalho__botao:hover {
 }
 .onde-posso-assistir {
   background-color: rgb(15, 14, 14);
-  height: 130vh;
+  min-height: 120vh;
 }
 .onde-posso-assistir__texto-titulo {
   padding-top: 10px;
@@ -274,6 +274,7 @@ header .cabecalho__botao:hover {
   justify-content: center;
   text-decoration: none;
   text-align: center;
+  transition: 0.3s ease-in-out;
 }
 .onde-posso-assistir .prime-video__botao-verificar:hover {
   background-color: rgba(0, 0, 0, 0.5333333333);
