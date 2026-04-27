@@ -16,6 +16,7 @@ header .cabecalho__botao {
   padding: 10px 20px;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
+  box-shadow: 0 0 5px white;
 }
 header .cabecalho__botao:hover {
   background-color: rgba(0, 0, 0, 0.5333333333);
@@ -134,6 +135,7 @@ header .cabecalho__botao:hover {
   backdrop-filter: brightness(0.5);
   padding: 10px;
   width: 70%;
+  border-radius: 10px;
 }
 .tesseract .resumo-filme__texto-sobre h2 {
   font-family: "Oswald", sans-serif;
@@ -185,7 +187,11 @@ header .cabecalho__botao:hover {
 
 @media (min-width: 794px) {
   .hero {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 350px;
+  }
+  .hero__background {
+    height: 100%;
   }
   .hero .container-principal-texto-hero__personagens-principais li {
     width: 100%;
@@ -193,7 +199,7 @@ header .cabecalho__botao:hover {
     font-size: 1rem;
   }
   .tesseract {
-    height: 100vh;
+    min-height: 120vh;
   }
   .resumo-filme__texto-sobre p {
     font-size: 1rem !important;
@@ -216,6 +222,9 @@ header .cabecalho__botao:hover {
     font-size: 1rem !important;
     line-height: 30px !important;
   }
+  .onde-posso-assistir .container .streaming {
+    width: 50%;
+  }
 }
 .onde-posso-assistir {
   background-color: rgb(15, 14, 14);
@@ -231,95 +240,101 @@ header .cabecalho__botao:hover {
   color: #fff;
   text-align: center;
 }
-.onde-posso-assistir .prime-video {
+.onde-posso-assistir .streaming .card {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.onde-posso-assistir .streaming .card:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 10px 10px black;
+  border: 2px solid #fff;
+}
+.onde-posso-assistir .streaming {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding: 25px;
 }
-.onde-posso-assistir .prime-video__prime-video-titulo {
+.onde-posso-assistir .streaming__titulo {
   text-align: center;
   margin-top: 5px;
   text-transform: uppercase;
 }
-.onde-posso-assistir .prime-video__logo {
+.onde-posso-assistir .streaming__logo {
   width: 100%;
   height: 100px;
   object-fit: scale-down;
   margin-bottom: 20px;
 }
-.onde-posso-assistir .prime-video__plano-mensal {
+.onde-posso-assistir .streaming__plano-mensal {
   font-size: 0.8rem;
-  margin-bottom: 0;
 }
-.onde-posso-assistir .prime-video__plano-mensal-valor {
+.onde-posso-assistir .streaming__plano-mensal::before {
+  content: "•";
+  padding-right: 5px;
+}
+.onde-posso-assistir .streaming__plano-mensal-valor {
   font-size: 1rem;
   text-transform: uppercase;
   margin-left: 5px;
   color: rgb(255, 255, 255);
   -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
-.onde-posso-assistir .prime-video__botao-verificar {
+.onde-posso-assistir .streaming__botao-verificar {
   background-color: #ffffff;
   color: black;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: auto;
   padding: 10px 10px;
   width: 50%;
   justify-content: center;
   text-decoration: none;
   text-align: center;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px white;
 }
-.onde-posso-assistir .prime-video__botao-verificar:hover {
+.onde-posso-assistir .streaming__botao-verificar:hover {
   background-color: rgba(0, 0, 0, 0.5333333333);
+  color: #fff;
 }
-.onde-posso-assistir .hbo-max {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
+.nos-contate {
+  min-height: 120vh;
+}
+.nos-contate__texto-titulo {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
-  padding: 25px;
 }
-.onde-posso-assistir .hbo-max__logo {
-  width: 100%;
-  height: 100px;
-  object-fit: scale-down;
-  margin-bottom: 20px;
-}
-.onde-posso-assistir .hbo-max__titulo {
-  text-align: center;
-  margin-top: 5px;
-  text-transform: uppercase;
-}
-.onde-posso-assistir .claro-tv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.nos-contate__texto-conhece-um-filme {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
-  padding: 25px;
+  margin-bottom: 40px;
 }
-.onde-posso-assistir .claro-tv__logo {
-  width: 100%;
-  height: 100px;
-  object-fit: scale-down;
-  margin-bottom: 20px;
+.nos-contate .container-form {
+  padding: 40px;
+  gap: 5px;
 }
-.onde-posso-assistir .claro-tv__titulo {
-  text-align: center;
-  margin-top: 5px;
-  text-transform: uppercase;
+.nos-contate .container-form label {
+  margin: 0;
+}
+.nos-contate .container-form input {
+  margin-bottom: 10px;
 }
 
 body {

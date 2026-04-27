@@ -1,6 +1,10 @@
 @media (min-width: 794px){
     .hero{
-        height: 100vh;
+        min-height: 100vh;
+        padding-top: 350px;
+        &__background {
+            height: 100%;
+        }
         .container-principal-texto-hero{
             &__personagens-principais{
                 li{
@@ -12,7 +16,7 @@
         }
     }
     .tesseract{
-        height: 100vh;
+        min-height: 120vh;
     }
     .resumo-filme{
         &__texto-sobre{
@@ -29,7 +33,7 @@
         .carousel-item{
             backdrop-filter: brightness(0.5) !important;
             img{
-                object-fit: cover !important;
+                object-fit:cover !important;
                 background-position: center !important;
             }
         }
@@ -41,4 +45,11 @@
             line-height: 30px !important;
             }
         }
+    .onde-posso-assistir{
+        .container{
+            .streaming{
+                width: 50%;
+            }
+        }
+    }
     }

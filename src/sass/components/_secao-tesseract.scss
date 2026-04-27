@@ -17,6 +17,7 @@
             backdrop-filter:brightness(0.5);
             padding: 10px;
             width: 70%;
+            border-radius: 10px;
             h2{
                 @include fontes.fontePrincipal;
                 color: #ffff;
@@ -53,12 +54,12 @@
             }
             &__descricao-personagem{
                 color: #fff;
-                text-align: center;       // Isso remove os espaços estranhos      // Dá o "respiro" entre as linhas
+                text-align: center;
                 padding: 0 20px;  
-                font-size: 0.7rem;      // Evita que o texto encoste na borda da tela
+                font-size: 0.7rem;    
                 word-wrap: break-word;
                 text-align: left;
-                line-height: 10px;  // Gar
+                line-height: 10px; 
             }
         }
     }

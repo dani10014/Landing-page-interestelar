@@ -114,30 +114,51 @@
                 </div>
         </section>
         <section class="onde-posso-assistir">
+            <h2 class="onde-posso-assistir__texto-titulo">Onde assistir</h2>
+            <div class="container d-lg-flex">
+                <div class="streaming">
+                    <div class="card bg-dark text-light py-4 px-4">
+                    <img src="./src/imagens/prime-video-logo.png" class="streaming__logo">
+                    <h5 class="streaming__titulo">Prime video</h5>
+                    <p class="streaming__plano-mensal">Plano Mensal: <span class="streaming__plano-mensal-valor">R$ 19,90 </span>por mês.</p>
+                    <p class="streaming__plano-mensal">Plano Anual: <span class="streaming__plano-mensal-valor">R$ 166,80 </span> ano (o que sai por <span class="streaming__plano-mensal-valor">R$ 13,90</span>/mês, uma economia de cerca de 30%.)</p>
+                    <a href="https://www.primevideo.com/-/pt/addons" target="_blank" class="streaming__botao-verificar w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="streaming">
+                    <div class="card bg-dark text-light py-4 px-4">
+                    <img src="./src/imagens/hbo-max.jpg" class="streaming__logo">
+                    <h5 class="streaming__titulo">Hbo Max</h5>
+                    <p class="streaming__plano-mensal">Básico com Anúncios:<span class="streaming__plano-mensal-valor">R$ 29,90 </span>por mês.</p>
+                    <p class="streaming__plano-mensal">Standard<span class="streaming__plano-mensal-valor">R$ 39,90</span>por mês.</p>
+                    <p class="streaming__plano-mensal">Platinum<span class="streaming__plano-mensal-valor">R$ 55,90</span>por mês.</p>
+                    <a href="https://www.hbomax.com/br/pt" target="_blank" class="streaming__botao-verificar w-100">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="streaming">
+                    <div class="card bg-dark text-light py-4 px-4">
+                    <img src="./src/imagens/630345.webp"class="streaming__logo">
+                    <h5 class="streaming__titulo">Claro tv+</h5>
+                    <p class="streaming__plano-mensal">App Claro tv+<span class="streaming__plano-mensal-valor">R$ 69,90 </span>por mês.</p>
+                    <p class="streaming__plano-mensal">Box Claro tv+<span class="streaming__plano-mensal-valor">R$ 99,90</span>por mês.</p>
+                    <a href="https://www.clarotvmais.com.br/" target="_blank" class="streaming__botao-verificar w-100">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="nos-contate">
+            <h2 class="nos-contate__texto-titulo">Nos contate</h2>
+            <p class ="nos-contate__texto-conhece-um-filme">Quer saber sobre um filme que você conhece?</p>
             <div class="container">
-                <h2 class="onde-posso-assistir__texto-titulo">Onde assistir</h2>
-                <div class="prime-video">
-                    <img src="./src/imagens/prime-video-logo.png" class="prime-video__logo">
-                    <h5 class="prime-video__prime-video-titulo">Prime video</h5>
-                    <p class="prime-video__plano-mensal">Plano Mensal: <span class="prime-video__plano-mensal-valor">R$ 19,90 </span>por mês.</p>
-                    <p class="prime-video__plano-mensal">Plano Anual: <span class="prime-video__plano-mensal-valor">R$ 166,80 </span> ano (o que sai por <span class="prime-video__plano-mensal-valor">R$ 13,90</span>/mês, uma economia de cerca de 30% em relação ao mensal).</p>
-                    <a href="https://www.primevideo.com/-/pt/addons" class="prime-video__botao-verificar">Saiba mais</a>
-                </div>
-                <div class="hbo-max">
-                    <img src="./src/imagens/hbo-max.jpg" class="hbo-max__logo">
-                    <h5 class="hbo-max__titulo">Hbo Max</h5>
-                    <p class="prime-video__plano-mensal">Básico com Anúncios:<span class="prime-video__plano-mensal-valor">R$ 29,90 </span>por mês.</p>
-                    <p class="prime-video__plano-mensal">Standard<span class="prime-video__plano-mensal-valor">R$ 39,90</span>por mês.</p>
-                    <p class="prime-video__plano-mensal">Platinum<span class="prime-video__plano-mensal-valor">R$ 55,90</span>por mês.</p>
-                    <a href="https://www.primevideo.com/-/pt/addons" class="prime-video__botao-verificar">Saiba mais</a>
-                </div>
-                <div class="claro-tv">
-                    <img src="./src/imagens/630345.webp"class="hbo-max__logo">
-                    <h5 class="hbo-max__titulo">Claro tv+</h5>
-                    <p class="prime-video__plano-mensal">App Claro tv+<span class="prime-video__plano-mensal-valor">R$ 69,90 </span>por mês.</p>
-                    <p class="prime-video__plano-mensal">Box Claro tv+<span class="prime-video__plano-mensal-valor">R$ 99,90</span>por mês.</p>
-                    <a href="https://www.primevideo.com/-/pt/addons" class="prime-video__botao-verificar">Saiba mais</a>
-                </div>
+                <form class="container-form form-control card">
+                    <label class="form-label">Nome filme:</label>
+                    <input type="text" placeholder="Nome filme" class="form-control">
+                    <label class="form-label">Email:</label>
+                    <input type="email" placeholder="Seu email" class="form-control">
+                    <label class="form-label">Sua mensagem:</label>
+                    <textarea placeholder="Sua mensagem"></textarea>
+                    <button class="btn btn-primary">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
